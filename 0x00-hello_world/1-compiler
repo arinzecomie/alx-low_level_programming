@@ -1,7 +1,2 @@
 #!/bin/bash
-
-# Extract the filename without extension from the variable $CFILE
-filename=$(basename "$CFILE" .c)
-
-# Compile the C file, but do not link it
-gcc -c "$CFILE" -o "$filename".o
+gcc -c $CFILE
